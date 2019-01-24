@@ -1,0 +1,45 @@
+Option Explicit
+
+Sub Lotto()
+
+'Dim Lotto_Number As Integer
+'Dim Winner_First_Name As String
+Dim i As Integer
+Dim First_Lotto As Integer
+Dim Second_Lotto As Integer
+Dim third_Lotto As Integer
+
+First_Lotto = 3957481
+Second_Lotto = 5865187
+third_Lotto = 2817729
+
+
+
+For i = 2 To 1001
+Dim Num As Integer
+
+Cells(i, 3).Value = Num
+If Num = First_Lotto Then
+Cells(2, 6).Value = Cells(i, 1).Value
+Cells(2, 7).Value = Cells(i, 2).Value
+Cells(2, 8).Value = Cells(i, 3).Value
+MsgBox ("Congratulations " & (Cells(i, 1).Value) & (Cells(i, 2).Value))
+ifelse
+
+Num = Second_Lotto Then
+Cells(3, 6).Value = Cells(i, 1).Value
+Cells(3, 7).Value = Cells(i, 2).Value
+Cells(3, 8).Value = Cells(i, 3).Value
+
+ifelse
+Num = third_Lotto Then
+Cells(4, 6).Value = Cells(i, 1).Value
+Cells(4, 7).Value = Cells(i, 2).Value
+Cells(4, 8).Value = Cells(i, 3).Value
+
+
+End If
+
+
+
+End Sub

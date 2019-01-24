@@ -1,0 +1,18 @@
+
+Sub For_Loop()
+Dim i As Integer
+For i = 1 To 5 Step 2
+
+
+MsgBox ("i is now =  & i annthing I write")
+
+Next i
+
+Cells(i, 1).Value = i
+Cells(1, i).Value = i
+
+MsgBox ("i is now at i")
+
+Next i
+
+End Sub

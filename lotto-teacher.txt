@@ -1,0 +1,41 @@
+Sub lottery4()
+
+Dim lotto As Long
+
+
+’Iterate through the column with the lottos
+
+
+
+For i = 2 To 1001
+
+   lotto = Cells(i, 3).Value
+
+   ’First: 3957481
+   ’Second: 5865187
+   ’Third: 2817729
+
+   If lotto = 3957481 Then
+       ’MsgBox (“something”)
+
+       Range(“F2") = Cells(i, 1).Value
+       Range(“G2”) = Cells(i, 2).Value
+       Range(“H2") = lotto
+
+   ElseIf lotto = 5865187 Then
+       Range(“F3”) = Cells(i, 1).Value
+       Range(“G3") = Cells(i, 2).Value
+       Range(“H3”) = lotto
+
+   ElseIf lotto = 2817729 Then
+       Range(“F4") = Cells(i, 1).Value
+       Range(“G4”) = Cells(i, 2).Value
+       Range(“H4") = lotto
+
+   End If
+
+
+Next i
+
+
+End Sub
